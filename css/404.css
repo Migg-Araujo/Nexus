@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    display: none;
+}
+
+h1{
+    font-size: 10rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+a{
+    font-size: 1.5rem;
+}
