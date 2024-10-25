@@ -15,10 +15,14 @@
     </section>
 
     <section id='about' class="about">
+        <div class="even"></div>
         <div class="about-div">
             <h3>Aprendizado colaborativo</h3>
             <p>Conecte-se com outros usuários através de comunidades de ensino, com chat de texto e voz.</p>
-            <div class="foxus"></div>
+            <div class="container">
+                <div class="foxus"></div>
+                <div class="box sb1">Olá sou a Foxus, estou aqui para te ajudar com qualquer dúvida!</div>
+            </div>
         </div>
 
         <div class="img-div">

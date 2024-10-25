@@ -2,7 +2,10 @@
   --color-background: #121212;
   --color-text: white;
   --purple: #6521B4;
+  --purple2: #26153A;
   --purple-hover: #6521B440;
+  --button: #7C7C7C;
+  --button2: #43434388;
   --logo: url('../src/logo.svg');
   --name: url('../src/name.svg');
   --student: url('../src/student.svg');
@@ -34,7 +37,7 @@ body {
   width: 100dvw;
   height: 100dvh;
   position: absolute;
-  background: linear-gradient(25deg, transparent 40%, #6521B450);
+  background: linear-gradient(25deg, transparent 40%, #6621b49c);
   pointer-events: none;
   z-index: -1;
 }
@@ -166,6 +169,14 @@ section {
   flex-direction: column;
 }
 
+.even{
+  background: linear-gradient(transparent, #0f0f0f 20%, #0f0f0f 80%, transparent);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
 .home h3 {
   font-size: 2rem;
   text-align: center;
@@ -250,7 +261,6 @@ section {
 }
 
 .foxus{
-  margin-top: 150px;
   background-image: var(--foxus);
   height: 400px;
   width: 400px;
@@ -262,6 +272,58 @@ section {
   font-size: 1.5rem;
   position: absolute;
   top: 35px;
+}
+
+.box {
+  width: 300px;
+  background: var(--purple2);
+  border: var(--purple) 3px solid;
+  padding: 40px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+  position:absolute;
+  top: -100px;
+  left: 300px;
+  border-radius: 100%;
+}
+.sb1:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid var(--purple2);
+  border-right: 10px solid transparent;
+  border-top: 20px solid var(--purple2);
+  border-bottom: 20px solid transparent;
+  rotate: 24deg;
+  border-radius: 5px;
+  left: 24px;
+  bottom: 10px;
+}
+
+.sb1:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 14px solid var(--purple);
+  border-right: 14px solid transparent;
+  border-top: 20px solid var(--purple);
+  border-bottom: 20px solid transparent;
+  rotate: 20deg;
+  border-radius: 5px;
+  left: 20px;
+  bottom: 6px;
+  z-index: -1;
+}
+
+.container {
+  margin-top: 200px;
+  position: relative;
+  height: 400px;
+  width: 400px;
 }
 
 @keyframes fadeIn {

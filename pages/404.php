@@ -1,4 +1,8 @@
-<?php include 'header.php';?>
+<script>
+    var titleElement = document.querySelector('title');
+    titleElement.innerText = "Nexus | 404";
+</script>
+
 <link rel="stylesheet" href="<?php echo INCLUDE_PATH; ?>css/404.css">
 <div class="icon">
     <div class="logo"></div>

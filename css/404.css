@@ -20,10 +20,21 @@ h3{
 }
 
 a{
-    margin-top: 20px;
-    font-size: 2rem;
+    margin-top: 40px;
+    font-size: 1.75rem;
     font-weight: bold;
+    background-color: var(--button2);
+    border: var(--button) 2px solid;
+    border-radius: 20px;
+    padding: 30px;
+    text-decoration: none;
+    color: white;
     
+}
+
+a:hover{
+    background-color: var(--purple-hover);
+    border: var(--purple) 2px solid;
 }
 
 .logo{
