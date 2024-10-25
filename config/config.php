@@ -2,7 +2,7 @@
     session_start();
     date_default_timezone_set('America/Sao_Paulo');
 
-    define('INCLUDE_PATH', 'http://localhost/Nexus/');
+    define('INCLUDE_PATH', 'https://migg-araujo.github.io/Nexus/');
 
     $autoload = function($class) {
         $path = 'classes/'.$class.'.php';
