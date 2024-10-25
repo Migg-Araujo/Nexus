@@ -200,12 +200,12 @@ section {
 }
 
 .home button{
-  margin-top: 10px;
-  width: 120px;
-  height: 40px;
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
   border-radius: 10px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   background-color: var(--purple);
   color: white;
 }
@@ -253,8 +253,9 @@ section {
   margin-top: 150px;
   background-image: var(--foxus);
   height: 400px;
-  width: 320px;
+  width: 400px;
   background-size: contain;
+  animation: foxus 2.5s ease-in-out infinite;
 }
 
 .msg-alert {
@@ -299,5 +300,20 @@ section {
   }
   100%{
     bottom: 10px;
+  }
+}
+
+@keyframes foxus{
+  0% {
+    transform: rotate(0deg);
+  }
+  15%{
+    transform: rotate(10deg);
+  }
+  45%{
+    transform: rotate(-10deg);
+  }
+  60%{
+    transform: rotate(0deg);
   }
 }
