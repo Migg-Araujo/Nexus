@@ -2,10 +2,12 @@
   --color-background: #121212;
   --color-text: white;
   --purple: #6521B4;
+  --purple-hover: #6521B440;
   --logo: url('../src/logo.svg');
   --name: url('../src/name.svg');
   --student: url('../src/student.svg');
   --teacher: url('../src/teacher.svg');
+  --foxus: url('../src/foxus.svg');
 }
 
 * {
@@ -25,6 +27,7 @@ body {
   width: 100dvw;
   font-weight: 300;
   overflow-x: hidden;
+  text-align: center;
 }
 
 .gradient{
@@ -42,6 +45,7 @@ header {
   top: 0;
   left: 0;
   transition: top 0.5s;
+  z-index: 2;
 }
 
 nav {
@@ -89,6 +93,11 @@ nav {
   border: white 2px solid;
   border-radius: 15px;
   font-weight: 400;
+}
+
+.nav-student:hover, .nav-teacher:hover {
+  background-color: var(--purple-hover);
+  border: var(--purple) 2px solid;
 }
 
 .nav-student div{
@@ -203,7 +212,49 @@ section {
 
 .home button:hover{
   border: var(--purple) 2px solid;
-  background-color: #6521B440;
+  background-color: var(--purple-hover);
+}
+
+.about {
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.about-div, .img-div{
+  width: 50dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about h3{
+  font-size: 2.5rem;
+}
+
+.about p{
+  margin-top: 50px;
+  font-size: 1.75rem;
+  width: 450px;
+}
+
+.img-div div{
+  background-color: #6521B4;
+  height: 600px;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.foxus{
+  margin-top: 150px;
+  background-image: var(--foxus);
+  height: 400px;
+  width: 320px;
+  background-size: contain;
 }
 
 .msg-alert {

@@ -1,7 +1,7 @@
 <?php include 'header.php';?>
 <script>
     var titleElement = document.querySelector('title');
-    titleElement.innerText = "Math Blog | Início";
+    titleElement.innerText = "Nexus | Início";
 </script>
 <main>
     <section id='home' class='home'>
@@ -16,23 +16,30 @@
 
     <section id='about' class="about">
         <div class="about-div">
-            <h1>About Me</h1>
-            <p>Hello, my name is <strong>Miguel</strong>, I'm a <strong>Programmer</strong> and passionate about <strong>Mathematics</strong>, I created this website with the aim of improving my programming skills and making a blog about what I love most, <strong>Mathematics</strong>.</p>
+            <h3>Aprendizado colaborativo</h3>
+            <p>Conecte-se com outros usuários através de comunidades de ensino, com chat de texto e voz.</p>
+            <div class="foxus"></div>
         </div>
 
         <div class="img-div">
-            <img src="<?php echo INCLUDE_PATH; ?>/src/photo.jpg"/>
+            <div></div>
         </div>
     </section>
     
     <section class="about">
-        <div class="about-div">
-            <h1>About Me</h1>
-            <p>Hello, my name is <strong>Miguel</strong>, I'm a <strong>Programmer</strong> and passionate about <strong>Mathematics</strong>, I created this website with the aim of improving my programming skills and making a blog about what I love most, <strong>Mathematics</strong>.</p>
+        <div class="img-div">
+            <div></div>
         </div>
 
-        <div class="img-div">
-            <img src="<?php echo INCLUDE_PATH; ?>/src/photo.jpg"/>
+        <div class="about-div">
+            <h1>QUEM SOMOS</h1>
+            <p>O projeto Nexus iniciou-se em 2024 como uma ferramenta de auxilio aos alunos do ensino médio, desenvolvido pelos integrantes:<br />
+            <br />Miguel de Araújo Bizerra
+            <br />Murilo Torres de Araújo
+            <br /> Nathan Hiago de Sena
+            <br />Pedro Henrique Pereira 
+            <br /> Renam da Silva Andrade
+            <br /> Vinicius Santos Xarelli</p>
         </div>
     </section>
 </main>
