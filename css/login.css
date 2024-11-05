@@ -12,59 +12,20 @@ main{
     justify-content: center;
 }
 
-nav{
+.menu-user{
     display: none;
 }
 
 .login-area{
-    width: 1000px;
+    width: 900px;
     height: 600px;
-    background-color: var(--color-nav);
+    background-color: var(--color-form);
     border-radius: 40px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     display: flex;
-    flex-direction: row;
-}
-
-.sign-in-area{
-    width: 500px;
-    height: 600px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-}
-
-.sign-up-area{
-    width: 500px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: var(--purple-background);
-    border-radius: 200px 40px 40px 0px;
-}
-
-.sign-up-area button{
-    background-color: transparent;
-    border: 1px solid white;
-    border-radius: 10px;
-    color: white;
-    width: 120px;
-    height: 40px;
-    margin-top: 10px;
-    font-size: 1rem;
-}
-
-.sign-up-area p{
-    color: white;
-    margin-top: 100px;
-}
-
-.sign-up-area h1{
-    color: white;
-    margin-top: 200px;
+    justify-content: space-evenly;
 }
 
 form{
@@ -77,7 +38,7 @@ form{
 }
 
 input[type="text"], input[type="password"]{
-    background-color: var(--color-search);
+    background-color: var(--color-input);
     border: none;
     width: 350px;
     height: 50px;
@@ -93,23 +54,22 @@ input[type="text"]:focus, input[type="password"]:focus{
     outline: none;
 }
 
-.sign-in-area h1{   
-    margin-top: 200px;
+.login-area h1{   
+    font-size: 3rem;
 }
 
-.sign-in-area a{   
+.login-area a{   
     margin-bottom: 20px;
-    text-decoration: none;
     color: #6D6D6D;
     font-weight: 500;
 }
 
 a:hover{
-    text-decoration: underline;
+    color: var(--purple);
 }
 
 input[type="submit"]{
-    background-color: var(--purple-background);
+    background-color: var(--purple);
     border: none;
     border-radius: 10px;
     color: white;
@@ -120,11 +80,6 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background-color: transparent;
-    color: var(--purple-background);
-    border: 1px solid var(--purple-background);
-}
-
-.sign-up-area button:hover{
-    background-color: white;
-    color: var(--purple-background);
+    color: var(--purple);
+    border: 1px solid var(--purple);
 }

@@ -1,6 +1,8 @@
 :root {
   --color-background: #121212;
   --color-text: white;
+  --color-form: #202020;
+  --color-input: #2D2D2D;
   --purple: #6521B4;
   --purple2: #26153A;
   --purple-hover: #6521B440;
