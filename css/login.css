@@ -26,6 +26,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 form{
@@ -47,6 +48,7 @@ input[type="text"], input[type="password"]{
     color: var(--color-text);
     margin-bottom: 20px;
     padding-left: 10px;
+    transition: 0.5s ease-in-out;
 }
 
 input[type="text"]:focus, input[type="password"]:focus{
@@ -62,9 +64,10 @@ input[type="text"]:focus, input[type="password"]:focus{
     margin-bottom: 20px;
     color: #6D6D6D;
     font-weight: 500;
+    transition: 0.5s ease-in-out;
 }
 
-a:hover{
+.login-area a:hover{
     color: var(--purple);
 }
 
@@ -76,10 +79,55 @@ input[type="submit"]{
     width: 120px;
     height: 40px;
     font-size: 1rem;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
 }
 
 input[type="submit"]:hover{
     background-color: transparent;
     color: var(--purple);
     border: 1px solid var(--purple);
+}
+
+.close {
+    background-image: var(--close);
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: 0.5s ease-in-out;
+  }
+
+.google {
+    border: 2px solid var(--button);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.1rem;
+    background-color: var(--button2);
+    transition: 0.5s ease-in-out;
+    margin-top: -80px;
+}
+
+.google:hover {
+    background-color: var(--purple-hover);
+    border: 2px solid var(--purple);
+}
+
+.google div{
+    background-image: url("../src/google.svg");
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.close:hover {
+    transform: scale(120%);
 }

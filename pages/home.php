@@ -15,7 +15,6 @@
     </section>
 
     <section id='about' class="about">
-        <div class="even"></div>
         <div class="about-div">
             <h3>Aprendizado colaborativo</h3>
             <p>Conecte-se com outros usuários através de comunidades de ensino, com chat de texto e voz.</p>

@@ -1,6 +1,6 @@
 <script>
     var titleElement = document.querySelector('title');
-    titleElement.innerText = "Nexus | Área do Aluno ";
+    titleElement.innerText = "Nexus | Área do Professor";
 </script>
 
 <?php
@@ -37,7 +37,7 @@
 <main>
     <div class="login-area">
         <div class="close" onclick="window.location.href='<?php echo INCLUDE_PATH; ?>'"></div>
-                <h1>Área do Aluno</h1>
+                <h1>Área do Professor</h1>
                 <form action="?" method="POST">
                     <input type="text" placeholder="Email" autocomplete="off" required name='userEmail'>
                     <input type="password" placeholder="Senha" autocomplete="off" required name='password'>

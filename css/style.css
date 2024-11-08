@@ -13,6 +13,7 @@
   --student: url('../src/student.svg');
   --teacher: url('../src/teacher.svg');
   --foxus: url('../src/foxus.svg');
+  --close: url('../src/close.svg');
 }
 
 * {
@@ -33,6 +34,7 @@ body {
   font-weight: 300;
   overflow-x: hidden;
   text-align: center;
+  user-select: none;
 }
 
 .gradient{
@@ -98,6 +100,7 @@ nav {
   border: white 2px solid;
   border-radius: 15px;
   font-weight: 400;
+  transition: 0.5s ease-in-out;
 }
 
 .nav-student:hover, .nav-teacher:hover {
@@ -171,14 +174,6 @@ section {
   flex-direction: column;
 }
 
-.even{
-  background: linear-gradient(transparent, #0f0f0f 20%, #0f0f0f 80%, transparent);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -2;
-}
-
 .home h3 {
   font-size: 2rem;
   text-align: center;
@@ -221,6 +216,7 @@ section {
   font-size: 1.5rem;
   background-color: var(--purple);
   color: white;
+  transition: 0.5s ease-in-out;
 }
 
 .home button:hover{
