@@ -51,7 +51,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  transition: top 0.5s;
+  transition: top 0.2s;
   z-index: 2;
 }
 
@@ -100,7 +100,7 @@ nav {
   border: white 2px solid;
   border-radius: 15px;
   font-weight: 400;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .nav-student:hover, .nav-teacher:hover {
@@ -216,7 +216,7 @@ section {
   font-size: 1.5rem;
   background-color: var(--purple);
   color: white;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .home button:hover{

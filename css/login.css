@@ -48,7 +48,7 @@ input[type="text"], input[type="password"]{
     color: var(--color-text);
     margin-bottom: 20px;
     padding-left: 10px;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 input[type="text"]:focus, input[type="password"]:focus{
@@ -64,7 +64,7 @@ input[type="text"]:focus, input[type="password"]:focus{
     margin-bottom: 20px;
     color: #6D6D6D;
     font-weight: 500;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .login-area a:hover{
@@ -80,7 +80,7 @@ input[type="submit"]{
     height: 40px;
     font-size: 1rem;
     font-weight: bold;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 input[type="submit"]:hover{
@@ -97,7 +97,7 @@ input[type="submit"]:hover{
     position: absolute;
     top: 30px;
     right: 30px;
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 
 .google {
