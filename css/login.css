@@ -131,3 +131,10 @@ input[type="submit"]:hover{
 .close:hover {
     transform: scale(120%);
 }
+
+.msg-alert{
+    padding: 20px;
+    border: 2px #581818 solid;
+    border-radius: 10px;
+    background-color: #321D1D;
+}

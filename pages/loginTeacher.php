@@ -4,8 +4,10 @@
 </script>
 
 <?php
-    if(isset($_SESSION['user'])){
-        header('Location: user');
+    if(isset($_SESSION['user']) && $_SESSION['userType'] == 0){
+        header('Location: studentArea');
+    }else if(isset($_SESSION['user'])){
+        header('Location: teacherArea');
     }
     
     include __DIR__.'/../config/sql/DBcreate.php';
@@ -23,11 +25,12 @@
             include __DIR__.'/../config/sessionStart.php';
 
             $_SESSION['user'] = $user['ID_TEACHER'];
+            $_SESSION['userType'] = 1;
             $_SESSION['name'] = $user['USERNAME'];
 
-            header('Location: user');
+            header('Location: teacherArea');
         }else{
-            echo "<p class ='msg-alert'>Email ou Senha incorreta.</p>";
+            echo "<p class ='msg-alert'>Email ou Senha incorreto.</p>";
         }
     }
 ?>

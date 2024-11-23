@@ -1,0 +1,209 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quiz-container {
+    background: var(--color-form);
+    height: 90dvh;
+    width: 90dvw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#question-container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#options-container{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.option {
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+    background-color: var(--button2);
+    border: 2px var(--button) solid;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+}
+
+.option:hover {
+    border: 2px var(--purple) solid;
+}
+
+.option.selected {
+    background-color: var(--purple-hover);
+    border: 2px var(--purple) solid;
+}
+
+#navigation-buttons {
+    height: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--purple);
+    transition: 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    color: white;
+    background-color: var(--purple-hover);
+    border: 2px var(--purple) solid;
+}
+
+.nav-button:disabled {
+    color: #ffffff69;
+    background-color: #ffffff20;
+    border: none;
+}
+
+.progress-bar {
+    width: 95%;
+    height: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.progress-bar div{
+    background-color: var(--purple);
+    width: 10%;
+    height: 15px;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.alert{
+    position: absolute;
+    opacity: 0%;
+    padding: 30px;
+    border: 2px #581818 solid;
+    border-radius: 10px;
+    background-color: #321D1D;
+    font-size: 30px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.foxus{
+    background-image: var(--foxus);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    animation: none;
+    margin-right: 40px;
+    transition: 0.2s ease-in-out;
+}
+
+.question-area{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.question {
+    background: var(--button2);
+    border: var(--button) 2px solid;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    border-radius: 0px 15px 15px 15px;
+    transition: 0.2s ease-in-out;
+}
+.h2{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sb2:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 17px solid transparent;
+    border-right: 17px solid var(--button);
+    border-top: 17px solid var(--button);
+    border-bottom: 17px solid transparent;
+    left: -34px;
+    top: -2px;
+    z-index: 0;
+  }
+
+.sb2:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #333333;
+    border-top: 15px solid #333333;
+    border-bottom: 15px solid transparent;
+    left: -30px;
+    top: 0px;
+    z-index: 1;
+  }
+
+.animate {
+    animation: alert 3s ease-in-out;
+}
+
+@keyframes alert{
+    0%{
+        opacity: 0%;
+    }
+    
+    10%{
+        opacity: 100%;
+    }
+    
+    90%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+}

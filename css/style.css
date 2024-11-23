@@ -41,7 +41,7 @@ body {
   width: 100dvw;
   height: 100dvh;
   position: absolute;
-  background: linear-gradient(25deg, transparent 40%, #6621b49c);
+  background: linear-gradient(25deg, transparent 40%, #6621b41f);
   pointer-events: none;
   z-index: -1;
 }
@@ -251,11 +251,12 @@ section {
   width: 450px;
 }
 
-.img-div div{
+.exp-img{
   background-color: #6521B4;
   height: 600px;
   width: 600px;
-  border-radius: 20px;
+  border-radius: 30px;
+  box-shadow: #00000062 20px 20px;
 }
 
 .foxus{
@@ -322,6 +323,15 @@ section {
   position: relative;
   height: 400px;
   width: 400px;
+}
+
+.about-img{
+  background-image: url(../src/us.png);
+  background-size: cover;
+  height: 614px;
+  width: 816px;
+  border-radius: 30px;
+  box-shadow: #00000062 20px 20px;
 }
 
 @keyframes fadeIn {

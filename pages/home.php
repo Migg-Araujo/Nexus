@@ -10,7 +10,7 @@
         <p>focada nas suas dificuldades de aprendizado</p>
 
         <p class="quiz-text">Responda o quiz para ter acesso à rede social</p>
-        <button onclick="<?php echo "window.location.href = '".INCLUDE_PATH.'quiz'."'";?>">Quiz</button>
+        <button onclick="<?php echo "window.location.href = '".INCLUDE_PATH.'loginStudent'."'";?>">Quiz</button>
         <div class="arrow" id="arrow" onclick=down()></div>
     </section>
 
@@ -25,13 +25,13 @@
         </div>
 
         <div class="img-div">
-            <div></div>
+            <div class="exp-img"></div>
         </div>
     </section>
     
     <section class="about">
         <div class="img-div">
-            <div></div>
+            <div class="about-img"></div>
         </div>
 
         <div class="about-div">
