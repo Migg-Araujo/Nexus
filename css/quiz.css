@@ -41,6 +41,7 @@ main{
     height: 15%;
     display: flex;
     justify-content: flex-start;
+    text-align: start;
     padding-left: 50px;
     padding-right: 50px;
     align-items: center;

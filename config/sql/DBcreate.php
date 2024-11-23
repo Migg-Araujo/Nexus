@@ -52,4 +52,19 @@
     } else {
         echo "<script>console.log('Error in Create Table Teacher.')</script>";
     }
+
+    $sql = 'CREATE TABLE IF NOT EXISTS QUESTIONS(
+        ID_QUESTION INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        QUESTION VARCHAR(255),
+        ANSWER VARCHAR(255),
+        ID_STUDENT INT,
+        FOREIGN KEY (ID_STUDENT) REFERENCES STUDENT(ID_STUDENT)
+    )';
+    $sql_query = $conn->query($sql);
+
+    if ($sql_query === TRUE) {
+        echo "<script>console.log('Table Questions Created.')</script>";
+    } else {
+        echo "<script>console.log('Error in Create Table Questions.')</script>";
+    }
 ?>
