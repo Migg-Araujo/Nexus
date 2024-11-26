@@ -41,17 +41,107 @@ if(isset($_SESSION['user']) && $_SESSION['userType'] == 0 && $_SESSION['userSet'
 
     <script>
         const questions = [
-            { question: "Em relação à Matemática você: ", options: ["Possui facilidade, dominando seus principais conteúdos, como fórmulas e contas.", "Possui facilidade, porém tem dificuldades com contas complexas ou com decorar fórmulas.", "Acha difícil, porém consegue dominar o conteúdo com o tempo.", "Possui grandes dificuldades e acha que precisa de um ensino mais focado para dominar o conteúdo.", "Nenhuma das anteriores."] },
-            { question: "Pergunta 2", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 3", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 4", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 5", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 6", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 7", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 8", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 9", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] },
-            { question: "Pergunta 10", options: ["Opção 1", "Opção 2", "Opção 3", "Opção 4", "Opção 5"] }
-        ];
+    { 
+        question: "Em relação à Matemática você:", 
+        options: [
+            "Possui facilidade, dominando seus principais conteúdos, como fórmulas e contas.", 
+            "Possui facilidade, porém tem dificuldades com contas complexas ou com decorar fórmulas.", 
+            "Acha difícil, porém consegue dominar o conteúdo com o tempo.", 
+            "Possui grandes dificuldades e acha que precisa de um ensino mais focado para dominar o conteúdo.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação ao Português você:", 
+        options: [
+            "Compreende bem as regras gramaticais e possui facilidade em interpretar textos.", 
+            "Compreende bem a gramática, mas tem dificuldade em interpretação de textos mais complexos.", 
+            "Tem algumas dificuldades, mas consegue melhorar com prática.", 
+            "Encontra muitas dificuldades em gramática e interpretação.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação à Física você:", 
+        options: [
+            "Entende bem os conceitos e consegue aplicar as fórmulas com facilidade.", 
+            "Tem facilidade nos conceitos, mas dificuldade em resolver problemas mais complexos.", 
+            "Compreende os conceitos básicos, mas precisa de mais prática para aplicar.", 
+            "Encontra dificuldades tanto nos conceitos quanto na aplicação prática.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação à Química você:", 
+        options: [
+            "Compreende os conceitos e tem facilidade em cálculos químicos.", 
+            "Compreende os conceitos, mas tem dificuldade em cálculos químicos.", 
+            "Consegue entender os conceitos básicos, mas precisa de mais prática.", 
+            "Encontra dificuldades tanto nos conceitos quanto nos cálculos químicos.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação à Biologia você:", 
+        options: [
+            "Compreende bem os conceitos e tem facilidade em relacioná-los.", 
+            "Tem facilidade com os conceitos, mas dificuldade em decorar detalhes mais específicos.", 
+            "Consegue entender os conceitos básicos com esforço.", 
+            "Encontra dificuldades em entender e relacionar os conteúdos.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação à História você:", 
+        options: [
+            "Possui facilidade em entender e contextualizar os eventos históricos.", 
+            "Compreende bem, mas tem dificuldade em memorizar datas e detalhes específicos.", 
+            "Tem uma compreensão básica dos principais eventos, mas precisa se aprofundar.", 
+            "Encontra dificuldades em entender e relacionar os eventos históricos.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação à Geografia você:", 
+        options: [
+            "Possui facilidade em entender conceitos geográficos e suas aplicações.", 
+            "Compreende bem, mas tem dificuldades em associar os conceitos à prática.", 
+            "Consegue dominar os conceitos básicos com esforço.", 
+            "Encontra dificuldades em entender os conteúdos geográficos.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação à Filosofia você:", 
+        options: [
+            "Compreende bem os conceitos e tem facilidade em argumentar sobre eles.", 
+            "Compreende os conceitos, mas tem dificuldade em aplicá-los em argumentos.", 
+            "Consegue entender os conceitos básicos com esforço.", 
+            "Encontra dificuldades em compreender e aplicar os conceitos filosóficos.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação à Sociologia você:", 
+        options: [
+            "Entende bem os conceitos e relaciona-os ao mundo atual.", 
+            "Compreende os conceitos, mas tem dificuldades em associá-los à prática.", 
+            "Consegue dominar os conceitos básicos com esforço.", 
+            "Encontra dificuldades em entender e aplicar os conceitos sociológicos.", 
+            "Nenhuma das anteriores."
+        ] 
+    },
+    { 
+        question: "Em relação ao Inglês você:", 
+        options: [
+            "Consegue entender e se expressar bem, tanto oralmente quanto por escrito.", 
+            "Compreende o básico, mas tem dificuldade com textos e conversas mais complexas.", 
+            "Consegue entender o básico, mas tem dificuldade em se expressar.", 
+            "Encontra dificuldades tanto na compreensão quanto na expressão oral e escrita.", 
+            "Nenhuma das anteriores."
+        ] 
+    }
+];
 
         let currentQuestion = 0;
         let answers = new Array(questions.length).fill(null);
@@ -128,7 +218,7 @@ if(isset($_SESSION['user']) && $_SESSION['userType'] == 0 && $_SESSION['userSet'
             })
             .catch(error => console.error("Erro:", error));
             
-            /*window.location.href = "<?php //echo INCLUDE_PATH; ?>/pages/studentArea.php";*/
+            window.location.href = "<?php echo INCLUDE_PATH;?>redirect";
         }
 
         function runAnimation() {

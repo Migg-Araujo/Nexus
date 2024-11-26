@@ -67,4 +67,40 @@
     } else {
         echo "<script>console.log('Error in Create Table Questions.')</script>";
     }
+
+    $sql = 'INSERT INTO USER_TABLE(USERNAME, EMAIL, PASSWORD) VALUES ("migg", "nexus.aluno1@gmail.com", "$2y$10$5LA5a/qjEaCc4yKaakqkLuU06RyySroHVJ9f7/fBYlHVlbXUEVNwW"), ("migg", "nexus.aluno2@gmail.com", "$2y$10$5LA5a/qjEaCc4yKaakqkLuU06RyySroHVJ9f7/fBYlHVlbXUEVNwW"), ("migg", "nexus.aluno3@gmail.com", "$2y$10$5LA5a/qjEaCc4yKaakqkLuU06RyySroHVJ9f7/fBYlHVlbXUEVNwW"), ("migg", "nexus.professor1@gmail.com", "$2y$10$5LA5a/qjEaCc4yKaakqkLuU06RyySroHVJ9f7/fBYlHVlbXUEVNwW"), ("migg", "nexus.professor2@gmail.com", "$2y$10$5LA5a/qjEaCc4yKaakqkLuU06RyySroHVJ9f7/fBYlHVlbXUEVNwW")';
+    $sql_query = $conn->query($sql);
+
+    if ($sql_query === TRUE) {
+        echo "<script>console.log('Data inserted.')</script>";
+    } else {
+        echo "<script>console.log('Error in insert data.')</script>";
+    }
+    
+    $sql = 'INSERT INTO STUDENT(ID_USER, USER_SET) VALUES (1, 0), (2, 1), (3, 0)';
+    $sql_query = $conn->query($sql);
+
+    if ($sql_query === TRUE) {
+        echo "<script>console.log('Data inserted.')</script>";
+    } else {
+        echo "<script>console.log('Error in insert data.')</script>";
+    }
+
+    $sql = 'INSERT INTO TEACHER(ID_USER) VALUES (4), (5)';
+    $sql_query = $conn->query($sql);
+
+    if ($sql_query === TRUE) {
+        echo "<script>console.log('Data inserted.')</script>";
+    } else {
+        echo "<script>console.log('Error in insert data.')</script>";
+    }
+    
+    $sql = 'DELETE FROM USER_TABLE WHERE ID_USER > 5';
+    $sql_query = $conn->query($sql);
+
+    $sql = 'DELETE FROM STUDENT WHERE ID_STUDENT > 3';
+    $sql_query = $conn->query($sql);
+
+    $sql = 'DELETE FROM TEACHER WHERE ID_TEACHER > 2';
+    $sql_query = $conn->query($sql);
 ?>

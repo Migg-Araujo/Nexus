@@ -6,11 +6,12 @@
         </div>
           <div class='menu-user'>
             <?php
-              $isStudent = isset($_SESSION['student'])?'student':'loginStudent';
-              $isTeacher = isset($_SESSION['teacher'])?'teacher':'loginTeacher';
+              if(isset($_SESSION['user'])){
+                echo '<div onclick = "window.location.href = '."'".INCLUDE_PATH."logout'".'" style="margin-right: 20px; font-size: 10px">Desconectar</div>';
+            }
             ?>
-            <div class="nav-student" onclick="<?php echo "window.location.href = '".INCLUDE_PATH.$isStudent."'";?>"><div></div>Área do Aluno</div>
-            <div class="nav-teacher" onclick="<?php echo "window.location.href = '".INCLUDE_PATH.$isTeacher."'";?>"><div></div>Área do Professor</div>
+            <div class="nav-student" onclick="<?php echo "window.location.href = '".INCLUDE_PATH."loginStudent'";?>"><div></div>Área do Aluno</div>
+            <div class="nav-teacher" onclick="<?php echo "window.location.href = '".INCLUDE_PATH."loginTeacher'";?>"><div></div>Área do Professor</div>
             </div>
     </nav>
 </header>

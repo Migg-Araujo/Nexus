@@ -252,11 +252,12 @@ section {
 }
 
 .exp-img{
-  background-color: #6521B4;
+  background-image: url('../src/community.png');
+  background-size: cover;
   height: 600px;
   width: 600px;
   border-radius: 30px;
-  box-shadow: #00000062 20px 20px;
+  box-shadow: #000000 0px 0px 10px 20px;
 }
 
 .foxus{
